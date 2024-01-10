@@ -4,43 +4,41 @@ public class Course {
     String InsName;
     int NumOfStudentsEnrolled;
 
-    Course(String courseNameRecieved, String InsNameRecieved, int NumOfStudentsEnrolledRecieved){
+    Course(String courseNameRecieved, String InsNameRecieved, int NumOfStudentsEnrolledRecieved) {
         courseName = courseNameRecieved;
         InsName = InsNameRecieved;
         NumOfStudentsEnrolled = NumOfStudentsEnrolledRecieved;
     }
 
-    public String getCourseName(){
+    public String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String newCourseName){
+    public void setCourseName(String newCourseName) {
         courseName = newCourseName;
     }
-    public String getInseName(){
+
+    public String getInseName() {
         return InsName;
     }
 
-    public void setInsName(String newInsName){
+    public void setInsName(String newInsName) {
         InsName = newInsName;
 
     }
-    public int getNumOfStudentsEnrolled(){
+
+    public int getNumOfStudentsEnrolled() {
         return NumOfStudentsEnrolled;
     }
 
-    public void setNumOfStudentsEnrolled(int newNumOfStudentsEnrolled){
+    public void setNumOfStudentsEnrolled(int newNumOfStudentsEnrolled) {
         NumOfStudentsEnrolled = newNumOfStudentsEnrolled;
     }
-@Override
-public String toString() {
-    return " Course Name: " + courseName + "\n Instructor Name: " + InsName + "\n Number Of Students Enrolled: " + 25;
 
+    @Override
+    public String toString() {
+        return " Course Name: " + courseName + "\n Instructor Name: " + InsName + "\n Number Of Students Enrolled: "
+                + 25;
 
-}
-    public static void main(String[] args) throws Exception {
-    
-        Course firstCourse = new Course("Math", "Ahmad", 25);
-        System.out.println(firstCourse.toString());
     }
 }
